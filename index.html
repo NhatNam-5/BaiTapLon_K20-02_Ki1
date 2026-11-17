@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar" aria-label="Điều hướng chính">
+    <nav class="navbar">
       <a class="brand" href="index.html">✦ Tên của bạn</a>
       <div class="nav-links">
         <a href="#trang-chu">Trang chủ</a>
@@ -17,7 +17,6 @@
         <a href="#thanh-tuu">Thành tựu</a>
         <a href="#lien-he">Liên hệ</a>
       </div>
-      <button class="theme-button" id="theme-btn" type="button" aria-label="Đổi giao diện">🌙</button>
     </nav>
   </header>
 
@@ -28,9 +27,9 @@
       <p class="subtitle">[Viết một câu giới thiệu ngắn về bạn tại đây]</p>
     </section>
 
-    <section class="interest-grid" id="so-thich" aria-label="Sở thích">
+    <section class="interest-grid" id="so-thich">
       <article class="panel interest-card">
-        <div class="icon-bubble" aria-hidden="true">🎧</div>
+        <div class="icon-bubble">🎧</div>
         <h2>Đam mê Âm nhạc</h2>
         <p class="description">[Chia sẻ điều bạn yêu thích về âm nhạc.]</p>
         <h3>🎧 Thể loại yêu thích:</h3>
@@ -46,7 +45,7 @@
       </article>
 
       <article class="panel interest-card">
-        <div class="icon-bubble" aria-hidden="true">🎮</div>
+        <div class="icon-bubble">🎮</div>
         <h2>Đam mê Gaming</h2>
         <p class="description">[Chia sẻ điều bạn yêu thích về trò chơi.]</p>
         <h3>🏆 Trò chơi yêu thích:</h3>
@@ -86,14 +85,7 @@
 
     <section class="contact" id="lien-he"><h2>Kết nối với mình</h2><p>[Email hoặc liên kết mạng xã hội của bạn]</p></section>
   </main>
-  <footer>© <span id="year"></span> [Tên của bạn] · Trang cá nhân</footer>
-  <script>
-    const themeButton = document.querySelector('#theme-btn');
-    themeButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      themeButton.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    });
-    document.querySelector('#year').textContent = new Date().getFullYear();
-  </script>
+  <footer>© 2026 [Tên của bạn] · Trang cá nhân</footer>
 </body>
 </html>
+
