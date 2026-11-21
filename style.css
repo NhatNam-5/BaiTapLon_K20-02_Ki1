@@ -113,8 +113,10 @@ h1 {
 
 .note-image {
   width: 38%;
-  height: 360px;
+  max-width: 420px;
+  height: auto;
   flex: 0 0 38%;
+  display: block;
   border: 1px dashed var(--orange);
   border-radius: 12px;
   background-color: var(--surface-soft);
@@ -396,9 +398,8 @@ footer {
 
   .note-image {
     width: 100%;
+    max-width: 420px;
     height: auto;
-    max-height: 440px;
-    aspect-ratio: 606 / 716;
     flex-basis: auto;
     object-fit: contain;
   }
