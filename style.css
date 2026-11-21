@@ -1,13 +1,23 @@
 /* CSS cơ bản: bộ chọn, màu sắc, khoảng cách, viền và Flexbox. */
+:root {
+  --ink: #02070A;
+  --blue: #093180;
+  --orange: #FC7340;
+  --text: #f4f7fb;
+  --muted: #b7c5d8;
+  --surface: #08111c;
+  --surface-soft: #0b1c31;
+  --border: rgba(9, 49, 128, 0.72);
+}
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  color: #292b42;
+  color: var(--text);
   font-family: Arial, sans-serif;
-  background-color: #f3eafa;
+  background: radial-gradient(ellipse at 15% 0%, rgba(9, 49, 128, 0.28), transparent 38%), var(--ink);
 }
 
 a {
@@ -15,8 +25,8 @@ a {
 }
 
 .site-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ded5e8;
+  background-color: rgba(2, 7, 10, 0.96);
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar {
@@ -31,7 +41,7 @@ a {
 }
 
 .brand {
-  color: #5947a5;
+  color: var(--orange);
   font-weight: bold;
   text-decoration: none;
 }
@@ -42,13 +52,13 @@ a {
 }
 
 .nav-links a {
-  color: #55566c;
+  color: #c6d3e4;
   text-decoration: none;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  color: #5947a5;
+  color: var(--orange);
   text-decoration: underline;
 }
 
@@ -64,7 +74,7 @@ a {
 }
 
 .eyebrow {
-  color: #5947a5;
+  color: var(--orange);
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -76,7 +86,7 @@ h1 {
 
 .subtitle,
 .description {
-  color: #686a7d;
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -88,8 +98,8 @@ h1 {
 }
 
 .panel {
-  background-color: #ffffff;
-  border: 1px solid #ded5e8;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 16px;
 }
 
@@ -109,10 +119,10 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border: 1px dashed #b9acd8;
+  border: 1px dashed var(--orange);
   border-radius: 12px;
-  color: #5947a5;
-  background: linear-gradient(135deg, #eee8ff, #f8f3ff);
+  color: var(--orange);
+  background: linear-gradient(135deg, var(--blue), var(--surface-soft));
   text-align: center;
 }
 
@@ -122,7 +132,7 @@ h1 {
 
 .note-image small,
 .note-tip {
-  color: #686a7d;
+  color: var(--muted);
 }
 
 .note-copy {
@@ -157,7 +167,7 @@ h1 {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background-color: #eee8ff;
+  background-color: var(--blue);
   font-size: 24px;
 }
 
@@ -173,7 +183,7 @@ h2 {
 
 .detail-list {
   padding-left: 20px;
-  color: #686a7d;
+  color: var(--muted);
 }
 
 .detail-list li {
@@ -193,9 +203,9 @@ h2 {
 .stat {
   flex: 1;
   padding: 14px 8px;
-  border: 1px solid #ded5e8;
+  border: 1px solid var(--border);
   border-radius: 10px;
-  background-color: #f7f3ff;
+  background-color: var(--surface-soft);
   text-align: center;
 }
 
@@ -205,13 +215,13 @@ h2 {
 }
 
 .stat strong {
-  color: #5947a5;
+  color: var(--orange);
   font-size: 25px;
 }
 
 .stat span {
   margin-top: 5px;
-  color: #686a7d;
+  color: var(--muted);
   font-size: 13px;
 }
 
@@ -232,9 +242,9 @@ h2 {
 .achievement-card {
   flex: 1 1 220px;
   overflow: hidden;
-  border: 1px solid #ded5e8;
+  border: 1px solid var(--border);
   border-radius: 12px;
-  background-color: #ffffff;
+  background-color: var(--surface);
 }
 
 .text-only {
@@ -246,14 +256,14 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #686a7d;
-  background-color: #eee8f5;
+  color: var(--muted);
+  background-color: #0c2340;
   text-align: center;
 }
 
 .image-placeholder code,
 .badge {
-  color: #5947a5;
+  color: var(--orange);
 }
 
 .achievement-copy {
@@ -270,7 +280,7 @@ h2 {
 }
 
 .achievement-copy p {
-  color: #686a7d;
+  color: var(--muted);
   line-height: 1.5;
 }
 
@@ -284,13 +294,13 @@ h2 {
 }
 
 .contact-intro {
-  color: #686a7d;
+  color: var(--muted);
 }
 
 .contact-note {
   max-width: 620px;
   margin: 18px auto 0;
-  color: #686a7d;
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -309,9 +319,9 @@ h2 {
   gap: 14px;
   min-height: 92px;
   padding: 18px;
-  border: 1px solid #ded5e8;
+  border: 1px solid var(--border);
   border-radius: 12px;
-  background-color: #ffffff;
+  background-color: var(--surface);
   text-align: left;
 }
 
@@ -323,7 +333,7 @@ h2 {
   align-items: center;
   justify-content: center;
   border-radius: 11px;
-  background-color: #eee8ff;
+  background-color: var(--blue);
   font-size: 19px;
 }
 
@@ -334,7 +344,7 @@ h2 {
 
 .contact-item p {
   margin: 0;
-  color: #686a7d;
+  color: var(--muted);
   font-size: 14px;
   line-height: 1.5;
   overflow-wrap: anywhere;
@@ -342,7 +352,7 @@ h2 {
 
 .contact-placeholder {
   margin-top: 5px !important;
-  color: #5947a5 !important;
+  color: var(--orange) !important;
   font-weight: bold;
 }
 
@@ -352,13 +362,13 @@ h2 {
 
 .contact-link:hover,
 .contact-link:focus {
-  border-color: #b9acd8;
-  color: #5947a5;
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
 footer {
   padding: 18px;
-  color: #5e526a;
+  color: var(--muted);
   text-align: center;
   font-size: 14px;
 }
