@@ -4,8 +4,8 @@ Trang giới thiệu sở thích và thành tựu cá nhân, thực hiện bằn
 
 ## Chỉnh sửa nội dung
 
-1. Mở `index.html` và thay các phần trong dấu ngoặc vuông `[...]` bằng thông tin của bạn.
-2. Có thể thêm ảnh vào thư mục `images/`. Thay khung `.image-placeholder` bằng thẻ `<img src="images/ten-anh.jpg" alt="Mô tả ảnh">` và chỉnh kích thước ảnh trong `style.css`.
+1. Mở `index.html` và thay các phần trong dấu ngoặc vuông `[...]` bằng thông tin của bạn, gồm email, số điện thoại và liên kết mạng xã hội.
+2. Tải ảnh lên thư mục `images/`. Để hiện ảnh thành tựu, thay khung `.image-placeholder` bằng thẻ `<img src="images/ten-anh.jpg" alt="Mô tả ảnh">` rồi chỉnh kích thước trong `style.css`.
 3. Đổi màu, cỡ chữ, khoảng cách và đường viền trong `style.css`.
 
 ## Kiến thức sử dụng
