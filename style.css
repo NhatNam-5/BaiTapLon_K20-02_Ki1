@@ -275,16 +275,72 @@ h2 {
 }
 
 .contact {
-  padding: 30px 10px 10px;
+  padding: 36px 10px 18px;
   text-align: center;
 }
 
 .contact h2 {
-  margin: 0;
+  margin: 8px 0;
 }
 
-.contact p {
+.contact-intro {
   color: #686a7d;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.contact-item {
+  flex: 1 1 220px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 92px;
+  padding: 18px;
+  border: 1px solid #ded5e8;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background-color: #eee8ff;
+  font-size: 19px;
+}
+
+.contact-item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #686a7d;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  border-color: #b9acd8;
+  color: #5947a5;
 }
 
 footer {
