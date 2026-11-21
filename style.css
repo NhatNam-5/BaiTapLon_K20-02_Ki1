@@ -287,6 +287,13 @@ h2 {
   color: #686a7d;
 }
 
+.contact-note {
+  max-width: 620px;
+  margin: 18px auto 0;
+  color: #686a7d;
+  line-height: 1.6;
+}
+
 .contact-grid {
   display: flex;
   flex-wrap: wrap;
@@ -331,6 +338,12 @@ h2 {
   font-size: 14px;
   line-height: 1.5;
   overflow-wrap: anywhere;
+}
+
+.contact-placeholder {
+  margin-top: 5px !important;
+  color: #5947a5 !important;
+  font-weight: bold;
 }
 
 .contact-link {
