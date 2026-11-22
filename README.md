@@ -11,4 +11,4 @@ dưới đây là một số kiến thức em đã sử dụng trong bài
 - Không dùng JavaScript hoặc backend. Trang là trang tĩnh; liên kết menu chỉ chuyển đến các mục trong cùng trang.
 - Media query ở cuối `style.css` được dùng để sắp xếp nội dung trên màn hình nhỏ. Nếu lớp chưa học phần này, đây là phần tự tìm hiểu; có thể bỏ khối `@media` và giữ bố cục Flexbox.
 - CSS Grid, hiệu ứng `transition`, bộ chọn `:focus-visible`, thuộc tính ARIA và kiểm tra form HTML không được dùng trong phiên bản này. Trang hiện không có biểu mẫu.
-- Bảng màu chính được sử dụng là màu đen #02070A màu xanh nước đậm #09318D và màu cam #FC7340 được thầy Lê Thái Bảo gợi ý  
+- Bảng màu chính được sử dụng là màu đen #02070A màu xanh nước đậm #093180 và màu cam #FC7340 được thầy Lê Thái Bảo gợi ý  
